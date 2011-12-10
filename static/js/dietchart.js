@@ -14,15 +14,15 @@ dietchart = function dietchart() {
 			// Create and draw the visualization.
 			new google.visualization.LineChart(document.getElementById('chart_div')).
 				draw(data, {curveType: "function",
-							width: 500, height: 400,
-							vAxis: {maxValue: 10},
-							hAxis: {textPosition: "none", slantedText: true, slantedTextAngle: "90"}}
+							width: 400, height: 300,
+							vAxis: {maxValue: 10}}
+							///, hAxis: {textPosition: "none", slantedText: true, slantedTextAngle: "90"}}
 					);
 		}
 	};
 }();
 
-google.load('visualization', '1.0', {'packages':['linechart']});
+google.load('visualization', '1', {'packages':['corechart']});
 google.setOnLoadCallback(dietchart.drawLineChart);
 
 
