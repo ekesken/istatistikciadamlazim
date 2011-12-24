@@ -1,7 +1,12 @@
 application: istatistikciadamlazim
 version: 1
-runtime: python
+runtime: python27
 api_version: 1
+threadsafe: yes
+
+libraries:
+- name: django
+  version: latest
 
 handlers:
 - url: /favicon\.ico
@@ -11,6 +16,5 @@ handlers:
 - url: /static
   static_dir: static
 
-- url: .*
-  script: main.py
-
+- url: /.*
+  script: djangoappengine.main.application
