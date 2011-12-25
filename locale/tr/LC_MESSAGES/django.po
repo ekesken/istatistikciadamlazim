@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-12-24 13:16-0600\n"
+"POT-Creation-Date: 2011-12-25 02:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,73 @@ msgstr ""
 
 #: settings.py:6
 msgid "English"
-msgstr ""
+msgstr "İngilizce"
 
 #: settings.py:7
 msgid "Turkish"
-msgstr ""
+msgstr "Türkçe"
 
-#: templates/index.html:2 templates/setlang.html:10
+#: dynamic/base.html:6
+msgid "statistician"
+msgstr "istatistikçi"
+
+#: dynamic/base.html:34
+msgid "share your chart"
+msgstr "paylaş grafiğini"
+
+#: dynamic/base.html:43 dynamic/home.html:11
+msgid "finance"
+msgstr "finans"
+
+#: dynamic/base.html:87
+msgid "popular"
+msgstr "populer"
+
+#: dynamic/home.html:4 dynamic/index.html:4 dynamic/setlang.html:10
 msgid "home"
 msgstr "anasayfa"
+
+#: dynamic/home.html:5
+msgid ""
+"<strong>save</strong> your <strong>data</strong> and <strong>share</strong> "
+"your <strong>graphs</strong> with whoever you want"
+msgstr ""
+"<strong>veri</strong>ni <strong>kaydet</strong> ve <strong>grafik</"
+"strong>lerini istediğinle <strong>paylaş</strong>"
+
+#: dynamic/home.html:9 dynamic/home.html.py:11 dynamic/home.html.py:12
+#: dynamic/index.html:5 dynamic/login.html:4
+msgid "login"
+msgstr "uye-girisi"
+
+#: dynamic/home.html:9
+msgid "create your graph"
+msgstr "grafiğini yarat"
+
+#: dynamic/home.html:10 dynamic/index.html:6 dynamic/signup.html:4
+msgid "signup"
+msgstr "uye-ol"
+
+#: dynamic/home.html:10
+msgid "sport"
+msgstr "spor"
+
+#: dynamic/home.html:12
+msgid "health"
+msgstr "sağlık"
+
+#: dynamic/index.html:4
+msgid "Home"
+msgstr "Anasayfa"
+
+#: dynamic/index.html:5
+msgid "Login"
+msgstr "Üye Girişi"
+
+#: dynamic/index.html:6
+#, fuzzy
+msgid "Sign Up"
+msgstr "Üye Ol"
+
+#~ msgid "Popular"
+#~ msgstr "Popüler"

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block home %}
+<!-- home start -->
+<div id="{{_('home')}}" class="slide">
+	<h2>{{_('<strong>save</strong> your <strong>data</strong> and <strong>share</strong> your <strong>graphs</strong> with whoever you want')}}</h2>
+	<hr>
+	<div id="sliderwrap">
+		<div id="nivoslider">
+			<a href="#{{_('login')}}"><img src="/static/img/sample_chart_health.png" width="490" height="126" alt="" title="{{_('create your graph')}}" /></a>
+			<a href="#{{_('signup')}}"><img src="/static/img/sample_chart_sport.png" width="490" height="126" alt="" title="{{_('sport')}}" /></a>
+			<a href="#{{_('login')}}"><img src="/static/img/sample_chart_finance.png" width="490" height="126" alt="" title="{{_('finance')}}" /></a>
+			<a href="#{{_('login')}}"><img src="/static/img/sample_chart_health.png" width="490" height="126" alt="" title="{{_('health')}}" /></a>
+		</div>
+	</div>
+</div><!-- end div #home -->
+{% endblock %}

@@ -2,7 +2,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 
 def default(request):
-    path = 'index.html'
+    path = request.path[1:] or 'index.html'
     return render_to_response(path, {})
 
 def setlang(request):

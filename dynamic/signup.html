@@ -1,0 +1,41 @@
+{% extends 'login.html' %}
+{% block signup %}
+<!-- contact start -->
+<div id="{{_('signup')}}" class="slide">
+	<h2>contact me</h2>
+	<form id="contactform" novalidate>
+		<label for="name" id="namelabel">
+		<input type="text" name="name" id="name" placeholder="Name" tabindex="1">
+		</label>
+		<label for="contactemail" id="emaillabel">
+		<input type="email" name="contactemail" id="contactemail" placeholder="Email" tabindex="2">
+		</label>
+		<label for="contactmsg" id="msglabel">
+		<textarea name="contactmsg" id="contactmsg" placeholder="Your Comment" tabindex="3"></textarea>
+		</label>
+		<input type="submit" id="contactsubmit" value="Submit"><span id="contactstatus"></span>
+	</form>
+		<!-- hcard start -->
+		<div id="vcard" class="vcard">
+			<span class="fn">John Doe</span>
+			<a class="org url" href="http://www.example.com/">Your Company</a>
+			<a class="email" href="mailto:some@example.com">some@example.com</a>
+
+			<div class="adr">
+				<span class="street-address">Streetname</span>
+				<span class="locality">City</span>, 
+				<span class="region">State</span>, 
+				<span class="postal-code">123456</span>
+				<span class="country-name">CountryName</span>
+			</div>
+			
+			<div class="tel">
+				 <span class="type">Work</span>:
+				 <span class="value">+1 555 123 123</span>
+			</div>
+		<a class="vcardfile" title="Download my vCard" href="vcard.vcf"><img src="/static/img/vcard.png" height="48" width="48" alt="vcard"></a>
+		</div>
+		<!-- hcard end -->
+	
+</div><!-- end div #contact -->
+{% endblock %}

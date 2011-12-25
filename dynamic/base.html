@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	
+    <title>{{_('statistician')}}</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="revaxarts.com">
+	
+	<link rel="stylesheet" href="/static/css/style.css">
+	
+	<script>document.createElement('nav');document.createElement('section');</script>
+	<script src="/static/js/lib/jquery.1.4.4.js"></script>
+	<script src="/static/js/lib/cufon.js"></script>
+	<script src="/static/js/lib/font.js"></script>
+	<script src="/static/js/lib/jquery.nivo.slider.pack.js"></script>
+	<script src="/static/js/lib/jquery.prettyphoto.js"></script>
+	<script src="/static/js/lib/config.js"></script>
+	<script src="/js/script.js"></script>
+</head>
+<body>
+
+	<div id="wrap">
+
+	
+		<nav>
+			<a href="../" id="logo">Logo</a>
+			{% block nav %}{% endblock %}
+			<div id="shadow"></div>
+		</nav><!-- end nav -->
+		
+		<div id="content">
+			<h1>{{_('share your chart')}}</h1>
+
+			{% block home %}{% endblock %}
+			{% block login %}{% endblock %}
+			<!-- portfolio start -->
+			<!-- div id="portfolio" class="slide">
+				<div class="gallery">
+					<ul>
+						<li>
+							<a href="/static/img/sample_chart_finance_600x400.png" title="finans" data-rel="prettyPhoto[page1]"><img src="/static/img/sample_chart_finance.png" width="490" height="126" alt="" title="{{_('finance')}}" /></a>
+						</li>
+					</ul>
+				</div>
+				<ul class="gallerynav"></ul>
+			</div-->
+			<div id="portfolio" class="slide">
+
+				<h2>portfolio</h2>
+				<hr>
+				<div class="gallery">
+					<ul>
+						<li><a href="http://random.revaxarts.com/pool/800x400.jpg" title="Best Image Size is 800 x 400 pixels" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/pool/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/buildings/900x500.jpg" title="Larger Images will get trimmed" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/buildings/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://www.adobe.com/products/flashplayer/include/marquee/design.swf?width=800&amp;height=400" title="Flash Content works as well" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/logo/flash/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://vimeo.com/1084537" title="or Videos from Vimeo" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/logo/vimeo/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://www.youtube.com/watch?v=YE7VzlLtp-4" title="Youtube Videos are working too" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/logo/youtube/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/golf/600x400.jpg" title="some Description" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/golf/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/rolltreppe/800x500.jpg" title="you can use the arrow keys to navigate left and right" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/rolltreppe/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/street/800x400.jpg" title="hit the ESC key to exit the show!" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/street/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/turntables/800x400.jpg" title="some Description" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/turntables/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/kaffeetasse/800x400.jpg" title="Coffee" data-rel="prettyPhoto[page1]"><img src="http://random.revaxarts.com/kaffeetasse/84x70.jpg" width="84" height="70" alt=""></a></li>
+					</ul>
+					<ul title="custom title (optional)">
+						<li><a href="http://random.revaxarts.com/domino/800x400.jpg" title="some Description" data-rel="prettyPhoto[page2]"><img src="http://random.revaxarts.com/domino/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/golf/800x400.jpg" title="some Description" data-rel="prettyPhoto[page2]"><img src="http://random.revaxarts.com/golf/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/subway/800x400.jpg" title="some Description" data-rel="prettyPhoto[page2]"><img src="http://random.revaxarts.com/subway/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/windows/800x500.jpg" title="some Description" data-rel="prettyPhoto[page2]"><img src="http://random.revaxarts.com/windows/84x70.jpg" width="84" height="70" alt=""></a></li>
+					</ul>
+					<ul>
+						<li><a href="http://random.revaxarts.com/golf/800x400.jpg" title="some Description" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/golf/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/leaf/800x400.jpg" title="some Description" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/leaf/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/turntables/800x400.jpg" title="some Description" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/turntables/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/streichholz/800x500.jpg" title="some Description" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/streichholz/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/rolltreppe/800x500.jpg" title="you can use the arrow keys to navigate left and right" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/rolltreppe/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/street/800x400.jpg" title="hit the ESC key to exit the show!" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/street/84x70.jpg" width="84" height="70" alt=""></a></li>
+						<li><a href="http://random.revaxarts.com/kaffeetasse/800x400.jpg" title="Coffee" data-rel="prettyPhoto[page3]"><img src="http://random.revaxarts.com/kaffeetasse/84x70.jpg" width="84" height="70" alt=""></a></li>
+					</ul>
+				</div>
+				<ul class="gallerynav"></ul>
+				
+			</div><!-- end div #portfolio -->
+
+			<!-- socialmedia start -->
+			<div id="{{_('popular')}}"" class="slide">
+			
+				<h2>social media</h2>
+				<hr>
+				<ul id="networks">
+					<li class="twitter"><a href="http://twitter.com/revaxarts"><span>Twitter</span>twitter.com/revaxarts</a></li>
+					<li class="facebook"><a href="http://facebook.com/xaver"><span>Facebook</span>facebook.com/xaver</a></li>
+					<li class="google"><a href="http://www.google.com/profiles/revaxarts"><span>Google</span>google.com/revaxarts</a></li>
+					<li class="dribbble"><a href="http://dribbble.com/revaxarts"><span>Dribbble</span>dribbble.com/revaxarts</a></li>
+					<li class="vimeo"><a href="http://vimeo.com/revaxarts"><span>Vimeo</span>vimeo.com/revaxarts</a></li>
+					<li class="xing"><a href="https://www.xing.com/profile/Xaver_Birsak"><span>Xing</span>xing.com/Xaver_Birsak</a></li>
+					<li class="digg"><a href="http://digg.com/revaxarts"><span>Digg</span>digg.com/revaxarts</a></li>
+					<li class="flickr"><a href="http://www.flickr.com/people/revaxarts"><span>flickr</span>flickr.com/revaxarts</a></li>
+					<li class="linkedin"><a href="http://linkedin.com/in/xaver"><span>LinkedIn</span>linkedin.com/xaver</a></li>
+					<li class="skype"><a href="skype:revaxarts"><span>Skype</span>revaxarts</a></li>
+					<li class="mobileme"><a href="#"><span>Mobileme</span></a></li>
+				</ul>
+			</div><!-- end div #socialmedia -->
+
+			{% block signup %}{% endblock %}
+		</div><!-- end div #content -->
+	</div><!-- end div #wrap -->
+</body>
+</html>
