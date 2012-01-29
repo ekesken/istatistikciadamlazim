@@ -2,3 +2,37 @@ a platform to share your charts...
 
 save your data continously, create charts of your data, share them with people.
 
+INSTALL:
+========
+
+some documents to get general idea about django-googleappengine integration:
+* http://code.google.com/appengine/articles/django-nonrel.html
+* http://www.allbuttonspressed.com/projects/djangoappengine
+* http://www.allbuttonspressed.com/projects/django-nonrel
+
+after checking out django-autoload, django-dbindexer, django-nonrel,
+djangoappengine folders from their repositories and setting up your
+django-nonrel environment should have a folder structure like this:
+
+django-autoload
+django-dbindexer
+django-nonrel
+djangotoolbox
+djangoappengine
+istatistikciadamlazim
+ \|- autoload -> ../django-autoload/autoload
+  |- dbindexer -> ../django-dbindexer/dbindexer
+  |- django -> ../django-nonrel/django
+  |- djangotoolbox -> ../djangotoolbox/djangotoolbox
+  |- djangoappengine -> ../djangoappengine
+
+to setup django you checked out. enter django-nonrel folder and run command:
+
+$ python setup.py install
+
+now enter istatistikciadamlazim, and run:
+
+$ python manage.py runserver
+
+your application is ready to test at address 'http://127.0.0.1:8000/'.
+
