@@ -36,3 +36,16 @@ $ python manage.py runserver
 
 your application is ready to test at address 'http://127.0.0.1:8000/'.
 
+allauth uses sites framework, for creating a new site we used:
+
+$ python manage.py shell
+> from django.contrib.sites.models import Site
+> default_site = Site(1, "istatistikci.adamlazim.com", "istatistikci")
+> default_site.save()
+
+and added
+
+SITE_ID=1
+
+line to settings.py.
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	
+    <title>{{_('statistician')}}</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="revaxarts.com">
+	
+	<link rel="stylesheet" href="/static/css/style.css">
+	
+	<script>document.createElement('nav');document.createElement('section');</script>
+	<script src="/static/js/lib/jquery.1.4.4.js"></script>
+	<script src="/static/js/lib/cufon.js"></script>
+	<script src="/static/js/lib/font.js"></script>
+	<script src="/static/js/lib/jquery.nivo.slider.pack.js"></script>
+	<script src="/static/js/lib/jquery.prettyphoto.js"></script>
+	<script src="/static/js/lib/config.js"></script>
+	<script src="/js/script.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<nav>
+			<a href="../" id="logo">Logo</a>
+			{% block nav %}{% endblock %}
+			<div id="shadow"></div>
+		</nav><!-- end nav -->
+		{% block body %}{% endblock %}
+	</div><!-- end div #wrap -->
+</body>
+</html>

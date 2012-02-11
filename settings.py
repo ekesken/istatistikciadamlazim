@@ -22,6 +22,14 @@ INSTALLED_APPS = (
 
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
+    'emailconfirmation',
+    'uni_form',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.twitter',
+    'allauth.openid',
+    'allauth.facebook',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -36,6 +44,12 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
     'django.core.context_processors.media',
+    "allauth.context_processors.allauth",
+    "allauth.account.context_processors.account"
+)
+
+AUTHENTICATION_BACKENDS = (
+    "allauth.account.auth_backends.AuthenticationBackend",
 )
 
 # This test runner captures stdout and associates tracebacks with their
@@ -54,3 +68,4 @@ LANGUAGES = (
 )
 LANGUAGE_CODE="tr"
 
+SITE_ID=1
