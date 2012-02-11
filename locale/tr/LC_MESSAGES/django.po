@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-11 18:25+0200\n"
+"POT-Creation-Date: 2012-02-11 18:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,75 +28,75 @@ msgstr "Türkçe"
 #: allauth/account/forms.py:36 allauth/account/forms.py:167
 #: allauth/account/forms.py:341
 msgid "Password"
-msgstr ""
+msgstr "Şifre"
 
 #: allauth/account/forms.py:40
 msgid "Remember Me"
-msgstr ""
+msgstr "Beni Hatırla"
 
 #: allauth/account/forms.py:52 allauth/account/forms.py:113
 #: allauth/account/forms.py:284 allauth/account/forms.py:363
 msgid "E-mail"
-msgstr ""
+msgstr "E-posta"
 
 #: allauth/account/forms.py:57 allauth/account/forms.py:104
 msgid "Username"
-msgstr ""
+msgstr "Kullanıcı"
 
 #: allauth/account/forms.py:85
 msgid "This account is currently inactive."
-msgstr ""
+msgstr "Bu hesap şu an aktif değil."
 
 #: allauth/account/forms.py:88
 msgid "The e-mail address and/or password you specified are not correct."
-msgstr ""
+msgstr "Girdiğiniz e-posta ve/veya şifre hatalı."
 
 #: allauth/account/forms.py:90
 msgid "The username and/or password you specified are not correct."
-msgstr ""
+msgstr "Girdiğiniz kullanıcı ve/veya şifre hatalı."
 
 #: allauth/account/forms.py:116
 msgid "E-mail (optional)"
-msgstr ""
+msgstr "E-posta (isteğe bağlı)"
 
 #: allauth/account/forms.py:127
 msgid "Usernames can only contain letters, numbers and underscores."
-msgstr ""
+msgstr "Kullanıcı adı sadece harf, rakam ve '_' karakterlerinden oluşabilir."
 
 #: allauth/account/forms.py:133
 msgid "This username is already taken. Please choose another."
-msgstr ""
+msgstr "Kullanıcı adı daha önce alınmış, Lütfen yeni bir tane seçin."
 
 #: allauth/account/forms.py:141
 msgid "A user is registered with this e-mail address."
-msgstr ""
+msgstr "Bu e-posta ile kaydolmuş başka bir kullanıcı var."
 
 #: allauth/account/forms.py:171 allauth/account/forms.py:345
 msgid "Password (again)"
-msgstr ""
+msgstr "Şifre (tekrar)"
 
 #: allauth/account/forms.py:198 allauth/account/forms.py:330
 #: allauth/account/forms.py:352 allauth/account/forms.py:428
 msgid "You must type the same password each time."
-msgstr ""
+msgstr "Aynı şifreyi girmelisiniz."
 
 #: allauth/account/forms.py:234
 msgid "Your e-mail address has already been verified"
-msgstr ""
+msgstr "E-posta daha önce doğrulanmış"
 
 #: allauth/account/forms.py:244 allauth/account/utils.py:93
 #: allauth/account/views.py:101 allauth/account/views.py:117
 #, python-format
 msgid "Confirmation e-mail sent to %(email)s"
-msgstr ""
+msgstr "Doğrulama e-postası %(email) adresine gönderildi"
 
 #: allauth/account/forms.py:292
 msgid "This e-mail address already associated with this account."
-msgstr ""
+msgstr "Bu e-posta bu hesapla önceden ilişkilendirilmiş."
 
 #: allauth/account/forms.py:293
 msgid "This e-mail address already associated with another account."
-msgstr ""
+msgstr "Bu e-posta başka bir hesapla önceden ilişkilendirilmiş."
 
 #: allauth/account/forms.py:310
 msgid "Current Password"
@@ -104,15 +104,15 @@ msgstr ""
 
 #: allauth/account/forms.py:314 allauth/account/forms.py:411
 msgid "New Password"
-msgstr ""
+msgstr "Yeni Şifre"
 
 #: allauth/account/forms.py:318 allauth/account/forms.py:415
 msgid "New Password (again)"
-msgstr ""
+msgstr "Yeni Şifre (tekrar)"
 
 #: allauth/account/forms.py:324
 msgid "Please type your current password."
-msgstr ""
+msgstr "Lütfen şu anki şifrenizi girin."
 
 #: allauth/account/forms.py:373
 msgid "The e-mail address is not assigned to any user account"
@@ -390,14 +390,14 @@ msgstr "uye-ol"
 #: allauth/templates/account/signup.html:9
 #: allauth/templates/account/signup.html:24
 #: allauth/templates/socialaccount/signup.html:9
-#: allauth/templates/socialaccount/signup.html:22 dynamic/nav.html:8
+#: allauth/templates/socialaccount/signup.html:22 dynamic/nav.html:10
 #, fuzzy
 msgid "Sign Up"
 msgstr "Üye Ol"
 
 #: allauth/templates/account/signup.html:14
 msgid "Already have an account?"
-msgstr ""
+msgstr "Zaten bir hesabınız var?"
 
 #: allauth/templates/account/signup.html:14
 #, fuzzy
@@ -516,19 +516,19 @@ msgid ""
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
 
-#: dynamic/base.html:3
+#: dynamic/base.html:4
 msgid "share your chart"
 msgstr "paylaş grafiğini"
 
-#: dynamic/base.html:12 dynamic/home.html:11
+#: dynamic/base.html:13 dynamic/home.html:11
 msgid "finance"
 msgstr "finans"
 
-#: dynamic/base.html:56
+#: dynamic/base.html:57
 msgid "popular"
 msgstr "populer"
 
-#: dynamic/home.html:4 dynamic/nav.html:2 dynamic/setlang.html:10
+#: dynamic/home.html:4 dynamic/nav.html:5 dynamic/setlang.html:10
 msgid "home"
 msgstr "anasayfa"
 
@@ -561,15 +561,15 @@ msgstr "spor"
 msgid "health"
 msgstr "sağlık"
 
-#: dynamic/nav.html:2
+#: dynamic/nav.html:5
 msgid "Home"
 msgstr "Anasayfa"
 
-#: dynamic/nav.html:5
+#: dynamic/nav.html:7
 msgid "Logout"
 msgstr "Çıkış"
 
-#: dynamic/nav.html:7
+#: dynamic/nav.html:9
 msgid "Login"
 msgstr "Üye Girişi"
 
@@ -591,6 +591,34 @@ msgstr ""
 
 #: emailconfirmation/models.py:160
 msgid "email confirmations"
+msgstr ""
+
+#: httplib2/__init__.py:398
+#, python-format
+msgid "Content purported to be compressed with %s but failed to decompress."
+msgstr ""
+
+#: httplib2/__init__.py:508
+#, python-format
+msgid "Unsupported value for qop: %s."
+msgstr ""
+
+#: httplib2/__init__.py:511 httplib2/__init__.py:574
+#, python-format
+msgid "Unsupported value for algorithm: %s."
+msgstr ""
+
+#: httplib2/__init__.py:571
+msgid "The challenge doesn't contain a server nonce, or this one is empty."
+msgstr ""
+
+#: httplib2/__init__.py:577
+#, python-format
+msgid "Unsupported value for pw-algorithm: %s."
+msgstr ""
+
+#: httplib2/__init__.py:1317
+msgid "Redirected but the response is missing a Location: header."
 msgstr ""
 
 #: uni_form/tests/tests.py:577
