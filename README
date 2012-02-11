@@ -49,7 +49,7 @@ SITE_ID=1
 
 line to settings.py.
 
-TRANSLATION
+LOCALIZATION
 ============
 
 if you used a new string in your templates via {{_('xxx')}} method, you have to run following command:
@@ -81,4 +81,11 @@ $ python manage.py runserver
 make your request from a browser, you'll see a pdb prompt whenever pdb.set_trace() method is called.
 
 press c to continue running program. see help menu for other commands.
+
+DEPLOY
+======
+
+go to upper directory and run command:
+
+$ appcfg.py update istatistikciadamlazim
 
