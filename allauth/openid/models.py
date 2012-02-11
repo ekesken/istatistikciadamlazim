@@ -3,7 +3,7 @@ from django.db import models
 from allauth.socialaccount.defs import SocialAccountProvider
 from allauth.socialaccount.models import SocialAccount
 
-class OpenIDAccount(SocialAccount):
+class OpenIDAccount(models.Model):
     # Ideally, URLField(max_length=1024, unique=True) would be used
     # for identity.  However, MySQL has a max_length limitation of 255
     # for URLField. How about models.TextField(unique=True) then?
@@ -15,8 +15,12 @@ class OpenIDAccount(SocialAccount):
     #
     # [1] http://code.djangoproject.com/ticket/2495.
     # [2] http://openid.net/specs/openid-authentication-1_1.html#limits
+
+    # following line is a workaround to multitable inheritance problem in django-nonrel
+    # see thread: http://groups.google.com/group/django-non-relational/browse_thread/thread/3304b25e544c6955
+    base =  models.ForeignKey(SocialAccount, related_name='socialaccount_ref', null=False, blank=False, unique=False)
     identity = models.URLField(max_length=255, unique=True)
-    
+
     def __unicode__(self):
         return self.identity
 
@@ -30,6 +34,9 @@ class OpenIDAccount(SocialAccount):
                 ret = p
                 break
         return ret
+
+    def sync(self, data):
+        self.save()
 
 class OpenIDStore(models.Model):
     server_url = models.CharField(max_length=255)

@@ -19,6 +19,7 @@ from allauth.utils import valid_email_or_none
 
 
 from models import OpenIDAccount
+from models import SocialAccount
 from utils import DBOpenIDStore
 from forms import LoginForm
 
@@ -97,7 +98,7 @@ def callback(request):
         try:
             account = OpenIDAccount.objects.get(identity=identity)
         except OpenIDAccount.DoesNotExist:
-            account = OpenIDAccount(identity=identity)
+            account = OpenIDAccount(identity=identity, base=SocialAccount())
         data = dict(email=email)
         ret = complete_social_login(request, data, account)
     elif response.status == consumer.CANCEL:

@@ -40,11 +40,19 @@ $(document).ready(function() {
 			//bind the pagetransition to the navigation
 			navanchors.bind('click', function(){
 											   
-				var t = $(this);
+				var t = $(this),
+						href = t.attr('href');
 				
 				navanchors.removeClass('active');
 				t.addClass('active');
-				var id = t.attr('href').substr(1);
+
+				// open link directly if it doesn't start with a hashtag
+				if (href.substr(0, 1) != '#') {
+					window.location.href = href;
+					return;
+				}
+
+				var id = href.substr(1);
 				
 				if(id != current){
 					$('#'+id).stop().css({
